@@ -1,10 +1,14 @@
 package main.models;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
 
-@Getter
-@AllArgsConstructor
 public class ResponseJSONObject {
-    String message;
+    private String message;
+
+    public ResponseJSONObject(String message) {
+        this.message = message;
+    }
+
+    public String getMessage() {
+        return message;
+    }
 }

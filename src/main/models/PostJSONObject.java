@@ -1,12 +1,37 @@
 package main.models;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-
-@AllArgsConstructor
-@Getter
 public class PostJSONObject {
-    int hour;
-    int minute;
-    String requestId;
+    private int hour;
+    private int minute;
+    private String requestId;
+
+    public PostJSONObject(int hour, int minute, String requestId) {
+        this.hour = hour;
+        this.minute = minute;
+        this.requestId = requestId;
+    }
+
+    public int getHour() {
+        return hour;
+    }
+
+    public void setHour(int hour) {
+        this.hour = hour;
+    }
+
+    public int getMinute() {
+        return minute;
+    }
+
+    public void setMinute(int minute) {
+        this.minute = minute;
+    }
+
+    public String getRequestId() {
+        return requestId;
+    }
+
+    public void setRequestId(String requestId) {
+        this.requestId = requestId;
+    }
 }

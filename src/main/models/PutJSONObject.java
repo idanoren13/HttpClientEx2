@@ -1,11 +1,27 @@
 package main.models;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-
-@Getter
-@AllArgsConstructor
 public class PutJSONObject {
-    int hour;
-    int minute;
+    private int hour;
+    private int minute;
+
+    public PutJSONObject(int hour, int minute) {
+        this.hour = hour;
+        this.minute = minute;
+    }
+
+    public int getHour() {
+        return hour;
+    }
+
+    public void setHour(int hour) {
+        this.hour = hour;
+    }
+
+    public int getMinute() {
+        return minute;
+    }
+
+    public void setMinute(int minute) {
+        this.minute = minute;
+    }
 }
