@@ -37,9 +37,9 @@ public class Client {
         Call call1 = client.newCall(request);
         try {
             response1 = Objects.requireNonNull(call1.execute().body()).string();
-            System.out.println("Response: " + response1);
+//            System.out.println("Response: " + response1);
         } catch (IOException e) {
-            System.out.println("Oopsy... something went wrong..." + e.getMessage());
+//            System.out.println("Oopsy... something went wrong..." + e.getMessage());
         }
         // 2. POST
         finalUrl =
@@ -55,9 +55,9 @@ public class Client {
         Call call2 = client.newCall(request2);
         try {
             response2 = gson.fromJson(Objects.requireNonNull(call2.execute().body()).string(), ResponseJSONObject.class);
-            System.out.println("Response: " + response2.getMessage());
+//            System.out.println("Response: " + response2.getMessage());
         } catch (IOException e) {
-            System.out.println("Oopsy... something went wrong..." + e.getMessage());
+//            System.out.println("Oopsy... something went wrong..." + e.getMessage());
         }
 
         // 3. PUT
@@ -78,9 +78,9 @@ public class Client {
         Call call3 = client.newCall(request3);
         try {
             response3 = gson.fromJson(Objects.requireNonNull(call3.execute().body()).string(), ResponseJSONObject.class);
-            System.out.println("Response: " + response3.getMessage());
+//            System.out.println("Response: " + response3.getMessage());
         } catch (IOException e) {
-            System.out.println("Oopsy... something went wrong..." + e.getMessage());
+//            System.out.println("Oopsy... something went wrong..." + e.getMessage());
         }
 
         // 4. DELETE
